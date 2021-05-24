@@ -184,18 +184,6 @@ imageProject(PageController? controller, List<Map<dynamic, dynamic>> imageList,
                             alignment: Alignment(-offSet.abs(), 0),
                           ),
                         )),
-                Positioned(
-                  left: 10,
-                  bottom: 20,
-                  right: 10,
-                  child: Text(
-                    imageList[i]['text'],
-                    style: TextStyle(
-                        color: Colors.red,
-                        fontSize: 35,
-                        fontWeight: FontWeight.bold),
-                  ),
-                )
               ],
             ),
           ),

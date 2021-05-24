@@ -22,7 +22,7 @@ environment:
 
 dependencies:
   get: ^4.1.4
-  parallax_image: ^0.3.1+1
+  responsive_builder: ^0.4.1
   flutter:
     sdk: flutter
 

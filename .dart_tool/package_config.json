@@ -80,14 +80,14 @@
       "languageVersion": "2.12"
     },
     {
-      "name": "parallax_image",
-      "rootUri": "file:///D:/Workspace/flutter/.pub-cache/hosted/pub.dartlang.org/parallax_image-0.3.1+1",
-      "packageUri": "lib/",
-      "languageVersion": "2.0"
-    },
-    {
       "name": "path",
       "rootUri": "file:///D:/Workspace/flutter/.pub-cache/hosted/pub.dartlang.org/path-1.8.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "responsive_builder",
+      "rootUri": "file:///D:/Workspace/flutter/.pub-cache/hosted/pub.dartlang.org/responsive_builder-0.4.1",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -152,7 +152,7 @@
       "languageVersion": "2.12"
     }
   ],
-  "generated": "2021-05-24T00:22:51.731520Z",
+  "generated": "2021-05-24T00:28:05.485415Z",
   "generator": "pub",
   "generatorVersion": "2.13.0"
 }
