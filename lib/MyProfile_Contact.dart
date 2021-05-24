@@ -25,21 +25,17 @@ contact() {
                     fontWeight: FontWeight.bold,
                     color: Colors.white)),
             //Text("Studies at Wentworth Institute of Technology", style: TextStyle(fontSize: 20, color: Colors.white))
+            textNoLink(
+                " Email: phanh5@wit.edu",
+                "https://raw.githubusercontent.com/haophan1996/profileFlutterWeb/main/image/ico_email.png"),
+            textNoLink(
+                " Phone: 8575265202 ",
+                'https://raw.githubusercontent.com/haophan1996/profileFlutterWeb/main/image/ico_phone.png'),
             textLink(
-                " Studies at ",
-                "Wentworth Institute of Technology  ",
-                'https://wit.edu/',
-                'https://raw.githubusercontent.com/haophan1996/profileFlutterWeb/main/image/ico_school.png'),
-            textLink(
-                " Studies at ",
-                "Bunker Hill Community College",
-                'https://bhcc.edu/',
-                'https://raw.githubusercontent.com/haophan1996/profileFlutterWeb/main/image/ico_school.png'),
-            textLink(
-                " Went to ",
-                "North Quincy High School",
-                'https://nqhs.quincypublicschools.com/',
-                'https://raw.githubusercontent.com/haophan1996/profileFlutterWeb/main/image/ico_school.png'),
+                " Social: ",
+                "Facebook",
+                'https://www.facebook.com/HaoPhan96s/',
+                'https://icons.iconarchive.com/icons/paomedia/small-n-flat/48/social-facebook-icon.png'),
             textLink(
                 " Lives in ",
                 "Quincy, Massachusetts",
@@ -53,6 +49,27 @@ contact() {
           ],
         ),
       ),
+    ),
+  );
+}
+
+textNoLink(String text, String ico) {
+  return Padding(
+    padding: EdgeInsets.only(top: 10),
+    child: RichText(
+      text: TextSpan(children: [
+        WidgetSpan(
+            child: Image.network(
+              ico,
+              color: Colors.white,
+              width: 20,
+              height: 20,
+            )),
+        TextSpan(
+          text: text,
+          style: TextStyle(fontSize: 15, color: Colors.white ),
+        ),
+      ]),
     ),
   );
 }
