@@ -25,27 +25,20 @@ contact() {
                     fontWeight: FontWeight.bold,
                     color: Colors.white)),
             //Text("Studies at Wentworth Institute of Technology", style: TextStyle(fontSize: 20, color: Colors.white))
-            textNoLink(
-                " Email: phanh5@wit.edu",
+            textNoLink(" Email: phanh5@wit.edu",
                 "https://raw.githubusercontent.com/haophan1996/profileFlutterWeb/main/image/ico_email.png"),
-            textNoLink(
-                " Phone: 8575265202 ",
+            textNoLink(" Phone: 8575265202 ",
                 'https://raw.githubusercontent.com/haophan1996/profileFlutterWeb/main/image/ico_phone.png'),
-            textLink(
+            textLinkNoColorIco(
                 " Social: ",
                 "Facebook",
                 'https://www.facebook.com/HaoPhan96s/',
                 'https://raw.githubusercontent.com/haophan1996/profileFlutterWeb/main/image/ico_f.png'),
             textLink(
-                " Lives in ",
-                "Quincy, Massachusetts",
-                'http://www.quincyma.gov/',
-                'https://raw.githubusercontent.com/haophan1996/profileFlutterWeb/main/image/ico_live.png'),
-            textLink(
-                " From ",
-                "Phan Thiet",
-                'https://en.wikipedia.org/wiki/Phan_Thi%E1%BA%BFt',
-                'https://raw.githubusercontent.com/haophan1996/profileFlutterWeb/main/image/ico_from.png'),
+                " Social ",
+                "LinkedIN",
+                'https://www.linkedin.com/in/Hao-phan?fbclid=IwAR3BbU9i2LSG44RolcR80GuQP9dwwlCWKdnVPC2hn_JdlwLQRChVZaJG3Oo',
+                'https://raw.githubusercontent.com/haophan1996/profileFlutterWeb/main/image/ico_lk.png'),
           ],
         ),
       ),
@@ -60,14 +53,14 @@ textNoLink(String text, String ico) {
       text: TextSpan(children: [
         WidgetSpan(
             child: Image.network(
-              ico,
-              color: Colors.white,
-              width: 20,
-              height: 20,
-            )),
+          ico,
+          color: Colors.white,
+          width: 20,
+          height: 20,
+        )),
         TextSpan(
           text: text,
-          style: TextStyle(fontSize: 15, color: Colors.white ),
+          style: TextStyle(fontSize: 15, color: Colors.white),
         ),
       ]),
     ),
@@ -81,12 +74,12 @@ textLink(String text, String linkText, String link, String ico) {
       text: TextSpan(children: [
         WidgetSpan(
             child: Image.network(
-              ico,
-              color: Colors.white,
-            )),
+          ico,
+          color: Colors.white,
+        )),
         TextSpan(
           text: text,
-          style: TextStyle(fontSize: 15, color: Colors.blue ),
+          style: TextStyle(fontSize: 15, color: Colors.white),
         ),
         TextSpan(
             recognizer: TapGestureRecognizer()
@@ -94,7 +87,34 @@ textLink(String text, String linkText, String link, String ico) {
                 js.context.callMethod('open', [link]);
               },
             text: linkText,
-            style: TextStyle(fontSize: 17, color: Colors.blue, fontWeight: FontWeight.bold)),
+            style: TextStyle(
+                fontSize: 17, color: Colors.blue, fontWeight: FontWeight.bold)),
+      ]),
+    ),
+  );
+}
+
+textLinkNoColorIco(String text, String linkText, String link, String ico) {
+  return Padding(
+    padding: EdgeInsets.only(top: 10),
+    child: RichText(
+      text: TextSpan(children: [
+        WidgetSpan(
+            child: Image.network(
+              ico,
+            )),
+        TextSpan(
+          text: text,
+          style: TextStyle(fontSize: 15, color: Colors.white),
+        ),
+        TextSpan(
+            recognizer: TapGestureRecognizer()
+              ..onTap = () {
+                js.context.callMethod('open', [link]);
+              },
+            text: linkText,
+            style: TextStyle(
+                fontSize: 17, color: Colors.blue, fontWeight: FontWeight.bold)),
       ]),
     ),
   );

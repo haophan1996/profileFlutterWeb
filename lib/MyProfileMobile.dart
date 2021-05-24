@@ -9,6 +9,8 @@ import 'package:web_my_profile/MyProfile_RelatedCourse.dart';
 import 'package:web_my_profile/MyProfile_Skill.dart';
 import 'package:web_my_profile/MyProfile_Project.dart';
 
+import 'MyProfile_Contact.dart';
+
 class MyProfileMobile extends GetView<ProfileController> {
   @override
   Widget build(BuildContext context) {
@@ -27,6 +29,7 @@ class MyProfileMobile extends GetView<ProfileController> {
                   style: TextStyle(fontWeight: FontWeight.bold, fontSize: 30),
                 ),
               ),
+              contact(),
               education(),
               intro(),
               summary(),
