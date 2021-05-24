@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:web_my_profile/MyProfileController.dart';
+import 'package:web_my_profile/MyProfile_Contact.dart';
 import 'package:web_my_profile/MyProfile_Image.dart';
 import 'package:web_my_profile/MyProfile_Intro.dart';
 import 'package:web_my_profile/MyProfile_Summary.dart';
@@ -33,6 +34,7 @@ class MyProfile extends GetView<ProfileController> {
                 children: <Widget>[
                   Flexible(child: Column(
                     children: [
+                      contact(),
                       education(),
                       intro(),
                     ],
