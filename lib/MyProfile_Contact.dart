@@ -35,7 +35,7 @@ contact() {
                 " Social: ",
                 "Facebook",
                 'https://www.facebook.com/HaoPhan96s/',
-                'https://icons.iconarchive.com/icons/paomedia/small-n-flat/48/social-facebook-icon.png'),
+                'https://raw.githubusercontent.com/haophan1996/profileFlutterWeb/main/image/ico_f.png'),
             textLink(
                 " Lives in ",
                 "Quincy, Massachusetts",
@@ -86,7 +86,7 @@ textLink(String text, String linkText, String link, String ico) {
             )),
         TextSpan(
           text: text,
-          style: TextStyle(fontSize: 15, color: Colors.white ),
+          style: TextStyle(fontSize: 15, color: Colors.blue ),
         ),
         TextSpan(
             recognizer: TapGestureRecognizer()
