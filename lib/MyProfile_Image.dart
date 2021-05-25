@@ -33,7 +33,7 @@ profileImage() {
               image: DecorationImage(
                   fit: BoxFit.cover,
                   image: NetworkImage(
-                      "https://avatars.githubusercontent.com/u/71293555?v=4")),
+                      "https://scontent-bos3-1.xx.fbcdn.net/v/t1.6435-9/158420874_2956196141329223_3459438880935934395_n.jpg?_nc_cat=102&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=5ATA-gt8eo4AX96lzSq&_nc_ht=scontent-bos3-1.xx&oh=5bd4e6c6d7d54b2fd02e45ec5bd39e5a&oe=60D0363F")),
               shape: BoxShape.circle,
             ),
           ),

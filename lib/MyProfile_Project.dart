@@ -54,6 +54,8 @@ myProject(ProfileController controller) {
                     "• Users able to post delete media in Application",
                     style: TextStyle(color: Colors.white),
                   ),
+                  customText("Github Link",
+                      "https://github.com/haophan1996/memvl"),
                 ],
               ),
             ),

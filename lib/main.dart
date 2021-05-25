@@ -15,6 +15,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
+      title: "Hao Phan Profile",
       home: ScreenTypeLayout(
         breakpoints: ScreenBreakpoints(tablet: 600, desktop: 950, watch: 300),
         mobile: MyProfileMobile(),
